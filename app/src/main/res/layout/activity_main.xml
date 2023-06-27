@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="24dp"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/add_product"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+
+
+
+        <EditText
+            android:id="@+id/et_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:drawableStart="@drawable/baseline_title_24"
+            android:drawablePadding="8dp"
+            android:background="@drawable/edit_text"
+            android:hint="Title"
+            android:inputType="textCapWords"
+            android:padding="6dp"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/et_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/baseline_currency_rupee_24"
+            android:drawablePadding="8dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_text"
+            android:hint="price"
+            android:inputType="number"
+            android:padding="6dp"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/et_discription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/baseline_description_24"
+            android:drawablePadding="8dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_text"
+            android:hint="description"
+            android:inputType="textCapWords"
+            android:padding="6dp"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/et_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/baseline_category_24"
+            android:drawablePadding="8dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_text"
+            android:hint="category"
+            android:inputType="textCapWords"
+            android:padding="6dp"
+            android:textColorHint="@color/black" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:background="@drawable/button_bg"/>
+    </LinearLayout>
+
+</RelativeLayout>
